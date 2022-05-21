@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace Server
 {
-    interface IMessageClient
+    public interface IMessageClient
     {
+        Task Send(NewMessage message);
     }
 }
